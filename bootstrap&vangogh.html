@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav id="topNav"><h2>NavBar</h2></nav>
+    <div class="forms">
+      <form onsubmit="submitButton()" method='dialog'>  <!-- adding method="dialog" prevents page refresh on button click and shows in console on browser-->        
+        <label for="title"> Title: </label>
+        <input id="news-title" type="text" name="title" />
+        <label for="content"> Content: </label>
+        <input id="news-content"type="text" name="content" />
+        <label for="URL"> URL: </label>
+        <input id="news-URL"type="text" name="URL" />
+        <input type="submit"></input>
+      </form>
+    </div>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <img class="card-img" src="" alt="" width="300" />
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+    <template id="artist-portfolio">
+      <h2 class="artist-name"></h2>
+    </template>
+    <div id="artist-list"></div>
+    <div id="card-list"></div>
+
+    <script src="scriptcopy.js"></script>
+  </body>
+</html>

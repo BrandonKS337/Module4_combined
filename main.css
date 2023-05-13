@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body {
+    background: rgb(216, 215, 215);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: fit-content; */
+    
+
+    
+}
+
+#topNav {
+    border: 2px solid rgb(66, 65, 65);
+    margin-bottom:  30px;
+    padding: 15px;
+    background: white;
+
+}
+
+.card {
+    width: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid black;
+    background: white;
+    box-shadow:  8px 8px 10px 1px grey;
+    margin: 15px;
+}
+.card-img-top {
+    width: 100%;
+}
+
+.card-body {
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.card-button {
+    border: 2 px solid black;
+    margin: 10px
+}
+
+
+
+@media only screen and (min-width: 1050px) {
+    body {
+      background: rgb(10, 170, 224);
+    }
+    .card {
+        width: 25%;
+    }
+    .forFlex {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 16rem;
+        display: flex;
+        flex-wrap: wrap;
+    
+        border: 1px solid black;
+        background: white;
+        box-shadow:  8px 8px 10px 1px grey;
+        margin: 15px;
+    }
+    
+  }
+  @media only screen and (max-width: 1049px) {
+    body {
+      background-color: rgb(153, 59, 174);
+    }
+    .forFlex {
+        width: 33.33;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 860px) {
+    body {
+      background-color: rgb(189, 173, 109);
+    }
+    .forFlex {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 571px) {
+    body {
+      background-color: rgb(40, 167, 46);
+    }
+    .forFlex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  }
